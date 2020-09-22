@@ -373,7 +373,7 @@ let RenderBigIcon = React.forwardRef((props, ref) => {
       className="flex items-center justify-center "
     >
       <IconSelector
-        size={275}
+        size={250}
         icon={activeIcon.icon}
         stroke={activeIcon.stroke}
         fill={activeIcon.fill}
