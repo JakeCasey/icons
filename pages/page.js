@@ -1,8 +1,6 @@
 let Page = (props) => {
   return (
-    <div className="relative h-full max-w-screen-xl pt-10 mx-auto">
-      {props.children}
-    </div>
+    <div className="h-full max-w-screen-xl pt-10 mx-auto">{props.children}</div>
   );
 };
 
