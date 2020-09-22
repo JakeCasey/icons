@@ -83,12 +83,15 @@ let Home = () => {
             />
             <StrokeSelector
               color={backgroundColor}
-              handleChange={(color) => updateBackgroundColor(color.hex)}
+              handleChange={(color) => {
+                updateBackgroundColor(color.hex);
+                updateFill(color.hex);
+              }}
             />
-            <StrokeSelector
+            {/* <StrokeSelector
               color={fill}
               handleChange={(color) => updateFill(color.hex)}
-            />
+            /> */}
           </div>
           <div className="flex flex-wrap mb-8">
             <Icon
