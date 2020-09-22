@@ -17,7 +17,7 @@ let StrokeSelector = ({ color, handleChange }) => {
         className="inline-block p-1 bg-white rounded shadow cursor-pointer"
         onClick={handleClick}
       >
-        <div style={{ background: color }} className="w-4 h-2" />
+        <div style={{ background: color }} className="w-6 h-4" />
       </div>
       {displayColorPicker ? (
         <>

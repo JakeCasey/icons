@@ -75,12 +75,37 @@ let Home = () => {
                 If this helped you, follow me on twitter!{' '}
               </a>
             </p>
+            <p className="mt-4">
+              <a href="https://twitter.com/jakeacasey">
+                <div className="inline-block px-4 py-3 text-white bg-blue-500 rounded bold">
+                  @jakeacasey
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="inline-block ml-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                  </svg>
+                </div>
+              </a>
+            </p>
           </div>
-          <div className="flex items-end justify-end mt-5 space-x-2 mr-11 md:mr-9 lg:mr-16">
+          <div className="flex items-center justify-end mt-5 space-x-2 mr-11 md:mr-9 lg:mr-16">
+            <p className="mb-1 text-sm font-semibold leading-none">
+              Customize colors:
+            </p>
             <StrokeSelector
               color={stroke}
               handleChange={(color) => updateStroke(color.hex)}
             />
+
             <StrokeSelector
               color={backgroundColor}
               handleChange={(color) => {
