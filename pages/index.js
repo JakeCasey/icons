@@ -49,8 +49,11 @@ let Home = () => {
       </div>
       <div className="relative z-10 w-full h-full bg-gray-100 ">
         <Page>
-          <div className="ml-4">
-            <div className="flex items-center justify-center inline-block w-10 h-10 font-bold text-white bg-black rounded-apple">
+          <div className="ml-4 mr-11 md:mr-9 lg:mr-16">
+            <div
+              style={{ background: backgroundColor, color: stroke }}
+              className="flex items-center justify-center inline-block w-10 h-10 font-bold text-white bg-black rounded-apple"
+            >
               i
             </div>
             <p className="mt-4 text-gray-600">
@@ -73,7 +76,7 @@ let Home = () => {
               </a>
             </p>
           </div>
-          <div className="flex items-end justify-end mt-5 mr-16 space-x-2">
+          <div className="flex items-end justify-end mt-5 space-x-2 mr-11 md:mr-9 lg:mr-16">
             <StrokeSelector
               color={stroke}
               handleChange={(color) => updateStroke(color.hex)}

@@ -22,7 +22,7 @@ let StrokeSelector = ({ color, handleChange }) => {
       {displayColorPicker ? (
         <>
           <div className="absolute inset-0" onClick={handleClose} />
-          <div className="absolute z-10">
+          <div style={{ marginLeft: -200 }} className="absolute z-10">
             <SketchPicker color={color} onChange={handleChange} />
           </div>
         </>
