@@ -63,13 +63,13 @@ let Home = () => {
               </a>
               , sized for use on your phone. Click on an icon to download it.{' '}
             </p>
-            <p>
+            <p className="mt-1">
               <a
                 style={{ color: stroke != '#ffffff' ? stroke : '#000000' }}
-                className="font-bold underline"
+                className="font-bold underline "
                 href="https://twitter.com/jakeacasey"
               >
-                If this helped you, consider following me on twitter!{' '}
+                If this helped you, follow me on twitter!{' '}
               </a>
             </p>
           </div>
@@ -2092,8 +2092,9 @@ let Home = () => {
             />
           </div>
           <div className="mb-10 ml-4 text-gray-500">
-            <span className="font-bold">*</span> This illusion is called the
-            Hermann grid illusion, found by Ludimar Hermann in 1870.
+            <span className="font-bold">*</span> The illusion you see between
+            icons is called the Hermann grid illusion. It was found by Ludimar
+            Hermann in 1870.
           </div>
         </Page>
       </div>
