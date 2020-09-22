@@ -23,8 +23,8 @@ let Home = () => {
     updateDownloading(true);
   };
 
-  let [stroke, updateStroke] = useState('white');
-  let [fill, updateFill] = useState('black');
+  let [stroke, updateStroke] = useState('#ffffff');
+  let [fill, updateFill] = useState('#000000');
   let [backgroundColor, updateBackgroundColor] = useState('black');
 
   useEffect(() => {
@@ -61,7 +61,16 @@ let Home = () => {
               >
                 Feather Icons
               </a>
-              , sized for use on your phone. Click on an icon to download it.
+              , sized for use on your phone. Click on an icon to download it.{' '}
+            </p>
+            <p>
+              <a
+                style={{ color: stroke != '#ffffff' ? stroke : '#000000' }}
+                className="font-bold underline"
+                href="https://twitter.com/jakeacasey"
+              >
+                If this helped you, consider following me on twitter!{' '}
+              </a>
             </p>
           </div>
           <div className="flex items-end justify-end mt-5 mr-16 space-x-2">
