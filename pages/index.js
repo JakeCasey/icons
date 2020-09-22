@@ -36,10 +36,22 @@ let Home = () => {
       </div>
       <div className="relative z-10 w-full h-full bg-white">
         <Page>
-          <div className="flex items-center justify-center inline-block w-10 h-10 ml-4 font-bold text-white bg-black rounded-apple">
-            i
+          <div className="ml-4">
+            <div className="flex items-center justify-center inline-block w-10 h-10 font-bold text-white bg-black rounded-apple">
+              i
+            </div>
+            <p className="mt-4 text-gray-600">
+              Twitter is going insane over custom iOS14 icons. Here are{' '}
+              <a
+                className="font-bold"
+                href="https://github.com/feathericons/feather"
+              >
+                Feather Icons
+              </a>
+              , sized for use on your phone. Click on an icon to download it.
+            </p>
           </div>
-          <div className="flex flex-wrap mt-16">
+          <div className="flex flex-wrap mt-5">
             <Icon iconName="activity" downloadIcon={downloadIcon} />
             <Icon iconName="airplay" downloadIcon={downloadIcon} />
             <Icon iconName="alertcircle" downloadIcon={downloadIcon} />
