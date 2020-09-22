@@ -1216,7 +1216,7 @@ let Home = () => {
               backgroundColor={backgroundColor}
             />
             <Icon
-              iconName="minimizetw"
+              iconName="minimizetwo"
               downloadIcon={downloadIcon}
               stroke={stroke}
               fill={fill}
@@ -1300,7 +1300,7 @@ let Home = () => {
               backgroundColor={backgroundColor}
             />
             <Icon
-              iconName="navigationtw"
+              iconName="navigationtwo"
               downloadIcon={downloadIcon}
               stroke={stroke}
               fill={fill}
