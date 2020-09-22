@@ -34,7 +34,7 @@ let Home = () => {
       <div className="fixed top-0 left-0 z-0">
         {activeIcon && <RenderBigIcon ref={IconRef} activeIcon={activeIcon} />}
       </div>
-      <div className="relative z-10 w-full h-full bg-white">
+      <div className="relative z-10 w-full h-full bg-gray-100 ">
         <Page>
           <div className="ml-4">
             <div className="flex items-center justify-center inline-block w-10 h-10 font-bold text-white bg-black rounded-apple">
@@ -51,7 +51,7 @@ let Home = () => {
               , sized for use on your phone. Click on an icon to download it.
             </p>
           </div>
-          <div className="flex flex-wrap mt-5">
+          <div className="flex flex-wrap mt-5 mb-8">
             <Icon iconName="activity" downloadIcon={downloadIcon} />
             <Icon iconName="airplay" downloadIcon={downloadIcon} />
             <Icon iconName="alertcircle" downloadIcon={downloadIcon} />
@@ -338,6 +338,10 @@ let Home = () => {
             <Icon iconName="zap" downloadIcon={downloadIcon} />
             <Icon iconName="zoomin" downloadIcon={downloadIcon} />
             <Icon iconName="zoomout" downloadIcon={downloadIcon} />
+          </div>
+          <div className="mb-10 ml-4 text-gray-500">
+            <span className="font-bold">*</span> This illusion is called the
+            Hermann grid illusion, found by Ludimar Hermann in 1870.
           </div>
         </Page>
       </div>
