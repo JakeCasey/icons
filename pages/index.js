@@ -343,16 +343,11 @@ let Icon = ({ downloadIcon, iconName }) => {
     <>
       <div className="mt-4 ml-4">
         <div
+          onClick={() => downloadIcon({ stroke, fill, backgroundColor, icon })}
           style={{ backgroundColor }}
-          className="flex items-center justify-center bg-black rounded-apple h-15 w-15 "
+          className="flex items-center justify-center bg-black cursor-pointer rounded-apple h-15 w-15 "
         >
           <IconSelector icon={iconName} stroke={stroke} fill={fill} />
-        </div>
-        <div
-          onClick={() => downloadIcon({ stroke, fill, backgroundColor, icon })}
-          className="flex items-center justify-center w-10 h-10 mt-3 bg-gray-100 cursor-pointer rounded-apple"
-        >
-          <Download className="text-gray-800" />
         </div>
       </div>
     </>
@@ -373,7 +368,7 @@ let RenderBigIcon = React.forwardRef((props, ref) => {
       className="flex items-center justify-center "
     >
       <IconSelector
-        size={250}
+        size={225}
         icon={activeIcon.icon}
         stroke={activeIcon.stroke}
         fill={activeIcon.fill}
