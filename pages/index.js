@@ -49,6 +49,8 @@ let Home = () => {
           content="Generate iOS 14 home screen icons from your favorite icon sets, for free!"
         />
         <meta property="og:image" content="https://icons.deva.io/meta.png" />
+        <meta name="twitter:card" content="summary_large_image"></meta>
+        <meta name="twitter:image" content="https://icons.deva.io/meta.png" />
       </Head>
       <div className="relative">
         <div className="fixed top-0 left-0 z-0">
